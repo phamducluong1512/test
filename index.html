@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #1e1e1e;
+            color: white;
+        }
+        .container {
+            display: flex;
+        }
+        .sidebar {
+            width: 250px;
+            background-color: #282828;
+            padding: 20px;
+        }
+        .main {
+            flex-grow: 1;
+            padding: 20px;
+        }
+        .repository {
+            background-color: #3b3b3b;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .latest-changes {
+            margin-top: 20px;
+            padding: 10px;
+            background-color: #3b3b3b;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Top repositories</h2>
+            <input type="text" placeholder="Find a repository...">
+            <div class="repository">phamducluong1512/test-vps</div>
+            <button>New</button>
+        </div>
+        <div class="main">
+            <h1>Home</h1>
+            <input type="text" placeholder="Ask Copilot">
+            <button>Create a profile README for me</button>
+            <button>Suggest next steps for an issue</button>
+            <button>My open pull requests</button>
+            
+            <h2>Feed</h2>
+            <div class="repository">
+                <h3>guandeh17/Self-Forcing</h3>
+                <p>Python</p>
+                <p>1.5k stars</p>
+            </div>
+            <div class="repository">
+                <h3>Shubhamsaboo/awesome-llm-apps</h3>
+                <p>Python</p>
+                <p>41.1k stars</p>
+                <p>Collection of awesome LLM apps with AI Agents and RAG using OpenAI, Anthropic, Gemini and opensource models.</p>
+            </div>
+            
+            <div class="latest-changes">
+                <h2>Latest changes</h2>
+                <ul>
+                    <li>2 days ago - GitHub Copilot in VS Code May release (v1.101)</li>
+                    <li>2 days ago - Copilot code review: Customization for all</li>
+                    <li>2 days ago - Actions Runner Controller 0.12.0 release</li>
+                    <li>3 days ago - CodeQL 2.22.0 improves coverage for Go and adds support for Swift 6.1.2</li>
+                </ul>
+                <a href="#">View changelog →</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
